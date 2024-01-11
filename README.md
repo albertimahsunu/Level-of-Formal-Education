@@ -1,5 +1,5 @@
 # Nigeria-Population
-![](https://assets.ourworldindata.org/uploads/2021/12/Population-cartogram_World-800x306.png)(https://www.worldatlas.com/r/w960-q80/upload/c4/9d/dd/administrative-map-of-nigeria.jpg)(https://i0.wp.com/ptcij.org/wp-content/uploads/2016/07/Nigerian-Population-profile.png?w=816&ssl=1)(https://cdn.businessday.ng/2021/01/Untitled-design-2021-01-22T171137.885-1.png)(https://cdn.businessday.ng/2021/01/Untitled-design-2021-01-22T171137.885-1.png)
+![](https://assets.ourworldindata.org/uploads/2021/12/Population-cartogram_World-800x306.png)![](https://www.worldatlas.com/r/w960-q80/upload/c4/9d/dd/administrative-map-of-nigeria.jpg)![]![](https://i0.wp.com/ptcij.org/wp-content/uploads/2016/07/Nigerian-Population-profile.png?w=816&ssl=1)![](https://cdn.businessday.ng/2021/01/Untitled-design-2021-01-22T171137.885-1.png)![](https://cdn.businessday.ng/2021/01/Untitled-design-2021-01-22T171137.885-1.png)
 
 ## Introduction
 
