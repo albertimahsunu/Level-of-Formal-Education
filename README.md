@@ -148,58 +148,6 @@ No data modeling was performed as the project dealt with a single table.
 
 **You can interact with the dashboard [here](https://app.powerbi.com/view?r=eyJrIjoiZjA3MDY4NzYtM2JhMi00OWZmLTkxNDktNDVjOWRlYmRmMjQ3IiwidCI6IjhjNmEzZDFhLWY5N2ItNDBjMC05ZTgxLTMxYzEwOTQxMzU3NiJ9)**
 
-Certainly! To create analysis and visualizations using the provided dataset, you can use tools like Python with libraries such as Pandas and Matplotlib, or you can leverage online platforms for data analysis and visualization like Google Sheets or Microsoft Excel. Below is a basic example using Python and Matplotlib. If you prefer another tool, please let me know, and I can guide you accordingly.
-
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-
-# Create a DataFrame from the provided data
-data = {
-    'Country Name': ['Nigeria'],
-    'Country Code': ['NGA'],
-    'Series Name': ['Population, total'],
-    'Series Code': ['SP.POP.TOTL'],
-    '1990': [95269988],
-    '1991': [97726323],
-    '1992': [100221563],
-    '1993': [102761737],
-    '1994': [105355783],
-    '1995': [108011465],
-    '1996': [110732904],
-    '1997': [113522705],
-    '1998': [116385750],
-    '1999': [119327073],
-    '2000': [122352009],
-    '2001': [125463434],
-    '2002': [128666710],
-    '2003': [131972533],
-    '2004': [135393616],
-    '2005': [138939478],
-    '2006': [142614094],
-    '2007': [146417024],
-    '2008': [150347390],
-    '2009': [154402181],
-    '2010': [158578261],
-    '2011': [162877076],
-    '2012': [167297284],
-    '2013': [171829303],
-    '2014': [176460502],
-    '2015': [181181744],
-    '2016': [185989640],
-}
-
-df = pd.DataFrame(data)
-
-# Plotting the population trend over the years
-plt.figure(figsize=(10, 6))
-plt.plot(df.columns[4:], df.iloc[0, 4:], marker='o', linestyle='-')
-plt.title('Population Trend in Nigeria (1990-2016)')
-plt.xlabel('Year')
-plt.ylabel('Population')
-plt.grid(True)
-plt.show()
-```
 
 This basic script creates a line plot showing the population trend in Nigeria from 1990 to 2016. You can modify and enhance this script based on your specific analysis and visualization requirements.
 
@@ -209,10 +157,14 @@ Insights from the dashboard include a gender distribution of respondents, an ave
 
 ## Final Thoughts🧨
 
-- Salary satisfaction among data professionals requires attention, emphasizing the need for increased remuneration.
-- Encouraging more women to enter the data profession is crucial, given the minimal representation.
-- Recognition of SQL as a fundamental programming language is essential, as its importance was somewhat underestimated in the dataset.
-
+- The population of Nigeria is about 206 million people. 
+- The population is growing at a rate of about 2.6% per year. 
+- The median age of the Nigerian population is 18 years.
+- The majority of Nigerians live in rural areas, but the urban population is growing rapidly. 
+- The largest city in Nigeria is Lagos, with a population of over 21 million people.
+- The Nigerian economy is the largest in Africa, but it is also one of the most unequal. 
+- The richest 10% of Nigerians control more than 40% of the country's wealth. 
+- The poorest 10% of Nigerians control less than 1% of the country's wealth.
 ![](courtney-hedger-t48eHCSCnds-unsplash.jpg)
 
 #### Thank you for reading through!👊🏽🤝🏽
