@@ -14,6 +14,9 @@ I hope you enjoy going through this project as much as I did working on it. 😊
 The dataset was gotten from DataBank.WorldBank is linked [here](https://databank.worldbank.org/source/jobs).
 
 ## Problem Statement
+Problem Statement
+The analysis addresses questions covering diverse aspects such as population distribution, age groups, economic indicators, and technological metrics. The dataset transformation focused on resolving issues like missing values, redundancy, inconsistencies, and empty columns.
+
 The following questions were answered based on how the data was transformed:
 
 1.	Population, total
@@ -135,33 +138,80 @@ Split some columns by delimiter to remove entries that would not be used for the
 
 ## Skills/Concepts used
 
-To get some columns for visualization and storytelling, I created new measures.
-used DAX, and filters.
+The project involved the creation of new measures, utilizing DAX, and applying filters to derive columns for visualization and storytelling.
 
 ## Data Modelling
-No modelling was done in this project as there was just one table.
+No data modeling was performed as the project dealt with a single table.
 
 ## Analysis and Visualization
 ![](New_dashboard.JPG)
 
 **You can interact with the dashboard [here](https://app.powerbi.com/view?r=eyJrIjoiZjA3MDY4NzYtM2JhMi00OWZmLTkxNDktNDVjOWRlYmRmMjQ3IiwidCI6IjhjNmEzZDFhLWY5N2ItNDBjMC05ZTgxLTMxYzEwOTQxMzU3NiJ9)**
 
-From the dashboard, we see that
-1. There were 630 total respondents that filled the survey with a whooping 74% male and 24% female respondents - *This is a call for more women into the data profession.😀*
-2. The average age of respondents, when rounded up is 30 years.
-3. Some people are not happy with their current salary because it shows a scale of below 5.
-4. A little above 5 for the work/life balance happiness.
-5. Most of the population is from the United States with 261 respondents.
-6. Most professionals found it neither difficult nor easy to penetrate into the space.
-7. It is quite amazing to see that Python is the most loved programming languauge.
-8. The highest paid job title is the **Data Scientist**...🤯🤯
+Certainly! To create analysis and visualizations using the provided dataset, you can use tools like Python with libraries such as Pandas and Matplotlib, or you can leverage online platforms for data analysis and visualization like Google Sheets or Microsoft Excel. Below is a basic example using Python and Matplotlib. If you prefer another tool, please let me know, and I can guide you accordingly.
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Create a DataFrame from the provided data
+data = {
+    'Country Name': ['Nigeria'],
+    'Country Code': ['NGA'],
+    'Series Name': ['Population, total'],
+    'Series Code': ['SP.POP.TOTL'],
+    '1990': [95269988],
+    '1991': [97726323],
+    '1992': [100221563],
+    '1993': [102761737],
+    '1994': [105355783],
+    '1995': [108011465],
+    '1996': [110732904],
+    '1997': [113522705],
+    '1998': [116385750],
+    '1999': [119327073],
+    '2000': [122352009],
+    '2001': [125463434],
+    '2002': [128666710],
+    '2003': [131972533],
+    '2004': [135393616],
+    '2005': [138939478],
+    '2006': [142614094],
+    '2007': [146417024],
+    '2008': [150347390],
+    '2009': [154402181],
+    '2010': [158578261],
+    '2011': [162877076],
+    '2012': [167297284],
+    '2013': [171829303],
+    '2014': [176460502],
+    '2015': [181181744],
+    '2016': [185989640],
+}
+
+df = pd.DataFrame(data)
+
+# Plotting the population trend over the years
+plt.figure(figsize=(10, 6))
+plt.plot(df.columns[4:], df.iloc[0, 4:], marker='o', linestyle='-')
+plt.title('Population Trend in Nigeria (1990-2016)')
+plt.xlabel('Year')
+plt.ylabel('Population')
+plt.grid(True)
+plt.show()
+```
+
+This basic script creates a line plot showing the population trend in Nigeria from 1990 to 2016. You can modify and enhance this script based on your specific analysis and visualization requirements.
+
+If you have a preferred tool or platform for analysis and visualization, let me know, and I can guide you through the process using that specific tool.From the dashboard, we see that
+Insights from the dashboard include a gender distribution of respondents, an average respondent age of 30, satisfaction levels with salary and work/life balance, and the popularity of Python among programming languages.
 
 
 ## Final Thoughts🧨
 
-- Data professionals are not exactly happy with their salary and truth is they do a whole lot of work. I strongly suggest that increment of salary is of importance.
-- The percentage of women in the data space is really minute and women need to come into the space a whole lot more.
-- Most professionals do not consider SQL as a programming language, I find this to be bias because every role in the data space cannot exactly to some extent, survive without SQL. There were a few SQL entries from the dataset but it was identified as "Others".
+- Salary satisfaction among data professionals requires attention, emphasizing the need for increased remuneration.
+- Encouraging more women to enter the data profession is crucial, given the minimal representation.
+- Recognition of SQL as a fundamental programming language is essential, as its importance was somewhat underestimated in the dataset.
 
 ![](courtney-hedger-t48eHCSCnds-unsplash.jpg)
 
